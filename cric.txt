@@ -1,0 +1,3900 @@
+Complete Feature List for the Cricket App (Organized & Sequenced)
+1. User Onboarding
+
+User registration (Email / Phone / Google / Apple)
+
+Login & logout
+
+OTP verification
+
+Forgot password
+
+2. User Profiles
+
+Create personal cricket profile
+
+Add player role (Batsman / Bowler / All-rounder / Wicketkeeper)
+
+Add player stats manually:
+
+Batting average
+
+Strike rate
+
+Bowling economy
+
+Wickets
+
+Runs
+
+Matches played
+
+Upload profile picture
+
+Player performance rating (auto-calculated from matches)
+
+De-rating system (if performance goes down)
+
+3. Team Management
+
+Create a team
+
+Add players to a team
+
+Manage team profile (logo, name, description)
+
+Edit or remove team members
+
+View team stats & history
+
+Team rating based on past performance
+
+4. Tournament Features
+
+Create a tournament
+
+Set entry/payment price for tournament
+
+Add teams to the tournament
+
+Tournament scheduling:
+
+Start & end dates
+
+Match timings
+
+Add venue/avenue for tournament
+
+Add exact location using maps
+
+Tournament location-based search (filter tournaments near user)
+
+Add prize/winner amount
+
+Add rules & format (League, Knockout, Round-robin)
+
+Point table generation
+
+Auto-update points after each match
+
+Tournament dashboard (teams, matches, stats)
+
+5. Match Management
+
+Create and schedule matches
+
+Add scoring format (T10 / T20 / ODI / Custom overs)
+
+Live scoring (manual entry)
+
+Upload match summary & scorecards
+
+Individual player score display
+
+Man of the match auto-selection
+
+Winning moments picture upload
+
+Match result posting
+
+Historical match records for teams & players
+
+6. Social & Interaction Features
+
+Likes on match posts
+
+Comments on match/tournament
+
+User-to-user messaging / chat
+
+Notifications (match start, result, team invites)
+
+7. Challenges & Competitions
+
+Create a personal cricket challenge (with entry price)
+
+Accept challenge option for players/teams
+
+Challenge results & payout system
+
+8. Search, Filters & Discoverability
+
+Search tournaments by:
+
+Location
+
+Date
+
+Format
+
+Entry fee
+
+Search players & teams
+
+Filter matches by tournament or location
+
+9. Player & Team Analytics
+
+Auto-calculated performance score
+
+Match-by-match breakdown
+
+Comparative ratings
+
+Team performance trends
+
+Leaderboards for:
+
+Top batsmen
+
+Top bowlers
+
+MVP players
+
+10. Payments & Wallet (Optional but Powerful)
+
+Tournament entry fee payment
+
+Challenge payment & payouts
+
+Wallet balance view
+
+Transaction history
+
+11. Admin Panel (You as Organizer)
+
+Manage all tournaments
+
+Create updates & announcements
+
+Approve/reject teams joining
+
+Manage reports & spam
+
+Verify players
+
+12. Extra Features (Advanced Upgrades Later)
+
+Live score push notifications
+
+Highlight reels (short clips upload)
+
+AI-based performance improvement tips
+
+Downloadable scorecards & tournament posters
+
+Reputation level system for players
+
+Ground booking system (optional future feature)
+
+Updated & Enhanced Feature List with Rules & Validation
+1. User Onboarding
+
+Same as before
+
+2. User Profiles
+
+Previous items plus:
+
+Player profile updates only based on verified match scores (users cannot add own scores manually)
+
+Player profile icons for high averages & top performers
+
+Match history and score display on player profiles
+
+3. Team Management
+
+Add these rules:
+
+Teams can be created only with players who have real verified profiles
+
+You can send join requests to players; players must accept to be added
+
+Team creation not allowed without accepted players
+
+Player data (scores, stats) in the team profile auto-updated from match results
+
+Teams with many wins or high rating get special trophy icons & “strong team” badges
+
+Users can report fake or inactive teams, and if verified, the team can be removed
+
+4. Tournament Features
+
+Add rules & validation:
+
+Tournament creation requires minimum 8 teams to accept participation requests
+
+Only after 8 teams accept, the tournament is official and scheduling can begin
+
+Tournament locations with photo uploads for venues
+
+Tournament matches scheduled after official team confirmations
+
+5. Match Management
+
+Expanded with validation & dispute:
+
+Match reports (player runs, wickets, full scorecards) updated by tournament admin only
+
+Players & team members can report wrong match data
+
+If two or more players report data errors, system allows correction and updates player stats automatically
+
+If two players report a match as fully incorrect, the team can be removed from the tournament
+
+Previous match & tournament data remain as immutable historical records
+
+Match results impact player and team profiles, updating ratings and stats
+
+6. Social & Interaction Features
+
+Same as before
+
+7. Challenges & Competitions
+
+Same as before
+
+8. Search, Filters & Discoverability
+
+Same as before
+
+9. Player & Team Analytics
+
+Player performance ratings based on verified match data
+
+Team strength rating and badges based on win history and performance
+
+Reporting system affects team visibility and existence (non-strong or reported teams can be removed)
+
+10. Payments & Wallet
+
+Same as before
+
+11. Admin Panel (You as Organizer)
+
+Approve or reject team join requests during team creation
+
+Verify team authenticity based on player profiles and match history
+
+Validate tournament creation only after 8 teams accept participation
+
+Manage match score reports, review and approve disputed score corrections
+
+Remove teams flagged for fraud, inactivity, or false data
+
+12. Extra Features (Advanced Upgrades Later)
+
+Same as before
+
+Would you like me to also prepare:
+
+A flowchart explaining team creation → player join → tournament approval → match management with reporting?
+
+A detailed user roles & permissions matrix (player, team admin, tournament admin, super admin)?
+
+A rules & dispute resolution flow for match reporting?
+
+Prompt for Feature 1: User Onboarding
+
+Prompt:
+
+I want to develop the User Onboarding feature for a React Native cricket app using TypeScript, Supabase for backend/authentication, React Native Paper for UI components, Zustand for state management, and Cursor for development.
+
+Please generate clean, well-structured React Native code adhering to these guidelines:
+
+Separation of Concerns & Code Cleanliness:
+
+Keep UI components and business logic separate.
+
+Avoid large files; split code into multiple small, focused files.
+
+Use custom hooks for handling logic like authentication, form state, and validation, placed in separate files.
+
+Components should be modular, reusable, and clearly named.
+
+State Management:
+
+Use Zustand for global state, especially for user auth state and onboarding flow state.
+
+Make sure state updates are minimal and efficient to prevent unnecessary re-renders.
+
+UI & UX:
+
+Use React Native Paper to build visually appealing, intuitive, and accessible forms and screens.
+
+Include smooth transitions between onboarding steps.
+
+The UI should attract users with clean layout, proper spacing, good use of colors, and clear feedback (loading indicators, error messages).
+
+Functionality Requirements for User Onboarding:
+
+User Registration (Email, Password) with validation (valid email, strong password).
+
+Login (Email & Password) with error handling.
+
+OTP verification flow after registration using Supabase magic links or phone OTP.
+
+Forgot Password screen with email input and reset link sending.
+
+Logout functionality.
+
+Show loading states and proper error/success messages in all flows.
+
+File Structure Suggestion:
+
+components/ for UI components (inputs, buttons, form wrappers).
+
+hooks/useAuth.ts for authentication logic (login, register, logout, OTP verify).
+
+store/authStore.ts for Zustand user auth state.
+
+screens/Onboarding/LoginScreen.tsx, RegisterScreen.tsx, OtpVerificationScreen.tsx, ForgotPasswordScreen.tsx for UI screens.
+
+Keep style definitions close to components or use React Native Paper theming.
+
+Code Comments:
+
+Include meaningful comments explaining key parts of the logic and UI.
+
+Additional Tips:
+
+Ensure forms have proper keyboard handling and input auto-focus for better UX.
+
+Use React Native Paper's theming system for consistent colors and fonts.
+
+Validate user input live and disable submission buttons until inputs are valid.
+
+Provide accessibility labels for all interactive elements.
+
+Deliverable:
+Please provide a full outline or example implementation for the User Onboarding feature following these instructions. You can start with the auth store, then hooks for auth logic, then UI components and finally the screens with navigation flow. No need to implement navigation itself, but mention how screens should flow (e.g., registration → OTP → login → forgot password).
+
+Prompt for Feature 2: User Profiles
+
+Prompt:
+
+I want to build the User Profile feature in my React Native cricket app using TypeScript, Supabase as backend, React Native Paper for UI, Zustand for state management, and Cursor for development.
+
+Please provide a clean, well-structured implementation plan and/or example code following these best practices:
+
+Code Organization & Cleanliness:
+
+Keep UI and business logic separate.
+
+Use multiple small files: components, hooks, and state should be organized and focused.
+
+Implement reusable components (e.g., profile picture uploader, stats display cards) inside components/.
+
+Create custom hooks for profile data fetching, updating, and validation placed in hooks/useUserProfile.ts.
+
+Ensure components are modular and reusable.
+
+State Management:
+
+Use Zustand to manage global user profile state, including current user info and real-time profile updates.
+
+Ensure state updates are minimal to avoid unnecessary re-renders and provide a smooth UI experience.
+
+UI/UX:
+
+Build visually appealing profile screens using React Native Paper components with clean layouts and accessible form inputs.
+
+Show a user-friendly form for profile creation and editing with live validation and helpful error messages.
+
+Include components for adding/selecting player role (Batsman, Bowler, All-rounder, Wicketkeeper).
+
+Allow uploading and cropping of profile pictures with preview.
+
+Display user stats (batting average, strike rate, economy rate, wickets, runs, matches played) in a clear and attractive manner (cards, charts, or lists).
+
+Highlight player’s rating and any special icons for high averages or performance.
+
+Include a section showing match history and scores.
+
+Provide smooth transitions and loading states when fetching or updating data.
+
+Functional Requirements:
+
+Fetch user profile data from Supabase on screen load.
+
+Allow user to update all fields with proper validation.
+
+Save profile updates back to Supabase, and update Zustand state accordingly.
+
+Profile picture upload and storage via Supabase Storage or any CDN linked with Supabase.
+
+Auto-update profile stats based on match results (linked to backend logic).
+
+Show badges/icons for players with high batting averages or special achievements.
+
+File Structure Suggestion:
+
+components/ProfilePictureUploader.tsx
+
+components/StatCard.tsx
+
+hooks/useUserProfile.ts
+
+store/userProfileStore.ts (Zustand)
+
+screens/ProfileScreen.tsx
+
+Additional Considerations:
+
+Use React Native Paper theming for consistent UI.
+
+Provide accessibility labels and keyboard navigation support.
+
+Ensure form inputs handle different screen sizes and orientations gracefully.
+
+Write meaningful comments explaining complex parts of the logic.
+
+Prompt Outcome:
+
+Provide detailed guidance or example code for each part: Zustand store, hooks for fetching/updating profile, UI components, and the profile screen UI layout.
+
+Prompt for Feature 3: Team Management
+
+Prompt:
+
+I want to implement the Team Management feature in my React Native cricket app using TypeScript, Supabase backend, React Native Paper for UI components, Zustand for global state, and Cursor for development.
+
+Please provide a clear, modular, and maintainable implementation plan or example code that follows these principles:
+
+Clean Code & Separation of Concerns:
+
+Keep UI components and business logic separate.
+
+Use small, reusable components for UI elements like team lists, player cards, join request dialogs, and buttons.
+
+Implement all business logic—such as team creation, player join requests, team member management—in custom hooks, e.g., hooks/useTeamManagement.ts.
+
+Organize code into well-defined folders: components/, hooks/, store/, and screens/.
+
+Avoid bloated files; keep functions and hooks focused and concise.
+
+State Management with Zustand:
+
+Use Zustand to hold global state related to teams, including current user’s teams, team members, pending join requests, and team ratings.
+
+Ensure efficient state updates to prevent unnecessary re-renders across the app.
+
+UI/UX Design:
+
+Use React Native Paper components to create clean, intuitive, and visually attractive UI screens and elements.
+
+Design team creation forms with validation and clear feedback.
+
+Provide UI flows for:
+
+Sending join requests to players (only real verified profiles).
+
+Viewing and managing incoming join requests.
+
+Adding/removing team members only after players accept join requests.
+
+Show badges or icons for strong/high-rated teams.
+
+Include smooth transitions, loading indicators, and error messages throughout the flows.
+
+Functional Requirements:
+
+Allow users to create teams only if they invite and get acceptance from real player profiles.
+
+Prevent team creation without accepted players.
+
+Implement sending and receiving join requests for players.
+
+Team admins can manage team members (add/remove) only if players have accepted invitations.
+
+Update team rating dynamically based on member performances and match history.
+
+Enable users to report fake or inactive teams; admins can remove reported teams.
+
+Reflect team’s strong/weak status visually via icons or trophies based on performance data.
+
+File Structure Suggestions:
+
+components/TeamCard.tsx — Display team info, members, rating.
+
+components/PlayerJoinRequestModal.tsx — For handling join requests UI.
+
+hooks/useTeamManagement.ts — Logic for team creation, join requests, member management.
+
+store/teamStore.ts — Zustand store for team-related global state.
+
+screens/TeamManagementScreen.tsx — Main screen for managing teams.
+
+Additional smaller components as needed for input forms, lists, buttons.
+
+Additional Tips:
+
+Use React Native Paper theming to ensure consistent look and feel.
+
+Provide accessibility support and proper keyboard handling on forms.
+
+Add meaningful comments describing critical functions and component responsibilities.
+
+Ensure all network or Supabase calls have error handling and show user-friendly messages.
+
+Deliverable:
+Provide an outline or example starter code including Zustand store setup, a custom hook for team logic, reusable UI components, and the main team management screen following the above guidelines.
+
+Prompt for Feature 4: Tournament Features
+
+Prompt:
+
+I want to develop the Tournament Features for my React Native cricket app using TypeScript, Supabase backend, React Native Paper UI components, Zustand for global state management, and Cursor for development.
+
+Please provide a clean, modular, and maintainable implementation approach or example code with the following rules and requirements:
+
+1. Code Cleanliness & Separation of Concerns
+
+Keep UI components completely separate from business logic.
+
+Avoid monolithic files; organize code into small, focused files with single responsibilities.
+
+Implement tournament-related business logic in custom hooks (e.g., hooks/useTournament.ts).
+
+Create reusable UI components like tournament cards, team lists, scheduling forms, and location pickers inside components/.
+
+Maintain a clear and consistent file structure:
+
+components/ for UI elements
+
+hooks/ for business logic
+
+store/ for Zustand state
+
+screens/ for UI screens
+
+2. State Management with Zustand
+
+Use Zustand to maintain global state related to tournaments, including:
+
+Tournament creation data
+
+Participating teams and their acceptance status
+
+Scheduling details (matches, dates, times)
+
+Venue information with images and locations
+
+Tournament status (e.g., pending, official, ongoing, completed)
+
+Optimize state updates to avoid unnecessary UI re-renders.
+
+3. UI/UX Design
+
+Build visually attractive, user-friendly screens using React Native Paper components, including:
+
+Tournament creation forms with validation and feedback
+
+Team invitation and acceptance UI flows
+
+Scheduling interfaces for matches with date/time pickers
+
+Venue/location selection with map integration and photo uploads
+
+Display of tournament details, point tables, prize info, and match schedules
+
+Include smooth animations, loading indicators, and clear error/success messages.
+
+Ensure accessibility and responsive layouts on all devices.
+
+4. Functional Requirements
+
+Tournament Creation:
+
+Allow users to create a tournament only after inviting a minimum of 8 teams.
+
+Send join requests to teams, track their acceptance status.
+
+Only after 8 teams accept, mark the tournament as official and allow match scheduling.
+
+Team Management in Tournament:
+
+Display list of invited teams with acceptance/rejection status.
+
+Provide option to resend invitations or cancel them before tournament starts.
+
+Scheduling Matches:
+
+Enable scheduling of matches once the tournament is official.
+
+Set match dates, times, and assign teams to each match.
+
+Support match format selection (T10, T20, ODI, custom overs).
+
+Venue Management:
+
+Add venue information with detailed location data (GPS coordinates) and upload venue pictures.
+
+Integrate map or location picker UI for accurate location tagging.
+
+Prize & Rules:
+
+Add tournament prize/winning amount details.
+
+Include tournament rules and format details (league, knockout, round-robin).
+
+Point Table & Status:
+
+Automatically generate and update tournament point table based on match results.
+
+Show real-time tournament status and leaderboard.
+
+5. File Structure Suggestions
+
+components/TournamentCard.tsx — Display tournament summary
+
+components/TeamInviteList.tsx — Manage team invitations and acceptances
+
+components/MatchScheduler.tsx — Form for scheduling matches
+
+components/VenuePicker.tsx — Location picker and image uploader
+
+hooks/useTournament.ts — Handle tournament creation, team invites, scheduling logic
+
+store/tournamentStore.ts — Zustand store for tournament state
+
+screens/TournamentCreationScreen.tsx
+
+screens/TournamentDetailsScreen.tsx
+
+screens/MatchSchedulingScreen.tsx
+
+6. Additional Considerations
+
+Use React Native Paper theming for consistent UI style.
+
+Ensure all forms validate inputs live and disable submit buttons until valid.
+
+Provide accessible labels and keyboard management for inputs.
+
+Add comprehensive error handling for all Supabase operations with user-friendly messages.
+
+Include loading states for asynchronous operations.
+
+Comment key parts of logic and UI to maintain clarity.
+
+Deliverable:
+Please provide a detailed guide or starter code for implementing the Tournament Features, covering Zustand store setup, hooks for business logic, reusable UI components, and screen layouts following these guidelines.
+
+Prompt for Feature 5: Match Management
+
+Prompt:
+
+I want to implement the Match Management feature in my React Native cricket app using TypeScript, Supabase as the backend, React Native Paper for UI, Zustand for state management, and Cursor for development.
+
+Please generate clean, well-structured, modular code and architecture following these rules:
+
+1. Code Cleanliness & Separation of Concerns
+
+Do NOT put UI and business logic in the same files.
+
+All match data handling, match scoring logic, validations, reporting logic, and data correction logic must go into custom hooks placed in hooks/useMatchManagement.ts.
+
+Keep files short and focused. No bloated components.
+
+Reusable UI components (scorecard items, player scoring row, reporting button, match result display, history list, etc.) should go into components/.
+
+Screens should ONLY fetch data from hooks/stores and display UI, nothing else.
+
+Keep consistent naming conventions and clear folder organization:
+
+components/
+
+hooks/
+
+store/
+
+screens/
+
+types/
+
+2. State Management (Zustand)
+
+Use Zustand to maintain global match-related state:
+
+Current match details
+
+Live scoring state
+
+Scorecard state
+
+Reporting flags
+
+Corrected score proposals
+
+Match history for user profiles
+
+Admin-only permissions (for tournament admins)
+
+Sync with Supabase in a clean, predictable way
+
+Make sure updates are efficient to avoid re-render storms.
+
+3. UI + UX (React Native Paper)
+
+Design highly attractive, intuitive UI with React Native Paper:
+
+Clean score entry screens with:
+
+Runs input
+
+Wickets input
+
+Overs input
+
+Strike rate & economy auto-calculation
+
+Player selection dropdown dialogs
+
+Card-style UI for team score display
+
+Upload winning moments photos
+
+Use Paper components:
+
+Card, Dialog, Button, TextInput, Surface, Divider, List, etc.
+
+Make match-history visually appealing with player cards and match-overview cards
+
+Include:
+
+Loading indicators
+
+Error messages
+
+Editable inputs with validation
+
+Smooth animations and transitions
+
+Focus on an engaging user experience.
+
+4. Functional Requirements (Critical)
+
+Implement all the match logic from your rules:
+
+A. Match Reporting
+
+Only tournament admins of the two playing teams can add the full match scorecard.
+
+Must include:
+
+Runs
+
+Wickets
+
+Overs
+
+Player-wise data
+
+Result
+
+Winning margin
+
+MVP
+
+Winning moment pictures
+
+B. Error Reporting System
+
+Any team member can report wrong data.
+
+If two players report wrong data for a specific player, allow corrected scores to be submitted.
+
+Automatically replace incorrect scores once confirmed.
+
+If two team members report that the entire match is incorrect, mark the match as invalid and
+
+Remove that team from tournament.
+
+Keep previous history as read-only.
+
+C. Automatic Profile Updates
+
+Player stats (runs, wickets, strike rate, average, economy, etc.) update automatically after match is approved.
+
+User cannot manually add or change their stats.
+
+Match history shows all past performances.
+
+D. Team Rating Updates
+
+Team performance affects team rating
+
+Strong teams (based on wins) get special trophy icons
+
+Weak or fake teams can be reported and removed
+
+E. Match Card Generation
+
+After match approval, generate a clean summary card with:
+
+Teams
+
+Scores
+
+Best performers
+
+Player stats update
+
+Match images
+
+5. File Structure Suggestions
+components/
+   MatchScoreInput.tsx
+   PlayerScoreRow.tsx
+   MatchCard.tsx
+   MatchHistoryItem.tsx
+   ReportErrorModal.tsx
+   WinningMomentUploader.tsx
+
+hooks/
+   useMatchManagement.ts
+   useMatchReporting.ts
+   usePlayerStatsUpdate.ts
+
+store/
+   matchStore.ts
+   reportingStore.ts
+
+screens/
+   MatchScoringScreen.tsx
+   MatchDetailsScreen.tsx
+   MatchHistoryScreen.tsx
+   ReportMatchIssueScreen.tsx
+
+6. Additional Considerations
+
+Use React Native Paper theming for consistent design.
+
+Add full validation for all inputs: runs, wickets, overs, strike rates, etc.
+
+Provide meaningful comments in all functions and hooks.
+
+Make sure to handle all Supabase calls with proper error messaging.
+
+Ensure screens are fully responsive and accessible.
+
+Avoid redundant API calls—use Zustand state + cached data.
+
+Deliverable
+
+Provide a clean, well-organized implementation outline or actual example code covering:
+
+Zustand stores for match management
+
+Custom hooks for scoring logic, reporting logic, and profile update logic
+
+Reusable UI components
+
+Screens for scoring, showing match details, uploading images, reporting issues
+
+Make the architecture consistent, modular, and production-ready.
+
+Prompt for Feature 6: Social & Interaction Features
+
+Prompt:
+
+I want to implement the Social & Interaction features in my React Native cricket app using TypeScript, Supabase backend, React Native Paper for UI, Zustand for state management, and Cursor.
+Please generate scalable, modular, and clean code following all these guidelines:
+
+1. Code Architecture & Cleanliness
+
+Keep UI and business logic strictly separated.
+
+Use small, focused files only.
+
+All logic for likes, comments, chat/messaging, and notifications should be implemented inside custom hooks such as:
+
+hooks/useLikes.ts
+
+hooks/useComments.ts
+
+hooks/useMessages.ts
+
+hooks/useNotifications.ts
+
+Components should handle only presentation and call logic from hooks.
+
+Create reusable UI components such as:
+
+CommentInputField
+
+CommentListItem
+
+LikeButton
+
+MessageBubble
+
+ChatInputBar
+
+NotificationBadge
+
+Follow consistent naming and folder structure:
+
+components/ for UI
+
+hooks/ for logic
+
+store/ for Zustand
+
+screens/ for feature screens
+
+Avoid messy or overly long files.
+
+2. State Management with Zustand
+
+Use Zustand to maintain global state related to:
+
+Likes/cache for posts & matches
+
+Comment drafts and submitted comments
+
+Chat conversations & live message list
+
+Notifications count, unread messages
+
+User-to-user conversation threads
+
+Real-time updates from Supabase channels
+
+Make sure state updates are efficient to prevent unnecessary re-renders.
+
+3. UI & UX (React Native Paper)
+
+Use React Native Paper components to ensure attractive UI for social interactions:
+
+For Likes
+
+Smooth animated like button
+
+Like counter
+
+UI feedback on tap
+
+Paper IconButton, Badge, Surface, Card
+
+For Comments
+
+Clean UI for comment input field
+
+Display of comment thread using List, Avatar, Divider
+
+Reply option
+
+Real-time syncing
+
+For Messaging
+
+WhatsApp-like chat UI using:
+
+Speech bubbles
+
+Time stamps
+
+Seen indicators
+
+Smooth scrolling
+
+Use Paper's styling and theming for a clean aesthetic
+
+Message input with emoji support
+
+For Notifications
+
+Notification list screen using List.Item, Divider, etc.
+
+Push-style UI for in-app alerts
+
+Badge on icons
+
+Overall UX Goals
+
+Clean, modern, user-attractive design
+
+Smooth transitions
+
+Loading skeletons and placeholders
+
+Clear error messages and success confirmations
+
+Accessibility throughout
+
+4. Functional Requirements
+
+You MUST include all these features:
+
+A. Likes
+
+Users can like:
+
+Matches
+
+Winning moment pictures
+
+Tournaments
+
+Real-time like count updates via Supabase Realtime
+
+Prevent duplicate likes
+
+Store likes per user per item
+
+B. Comments
+
+Users can write comments on:
+
+Matches
+
+Tournament posts
+
+Player milestones
+
+Support for replying to comments
+
+Real-time comment updates
+
+Pagination for long comment threads
+
+Offensive or spam comments can be reported
+
+C. User Messaging (Direct Chat)
+
+One-on-one chat between users
+
+Real-time messaging using Supabase Realtime channels
+
+Message read receipts
+
+Online/offline status
+
+Timestamps and delivered indicators
+
+Conversations list screen
+
+Chat detail screen with message bubbles
+
+Support image messaging (optional enhancement)
+
+D. Notifications
+
+Notifications for:
+
+Likes
+
+Comments
+
+Team join requests
+
+Tournament invites
+
+Match updates
+
+Score approvals
+
+Admin announcements
+
+In-app badge indicators
+
+Mark notifications as read
+
+Real-time update
+
+E. Moderation & Reporting
+
+Allow users to report offensive comments or messages
+
+Allow admins to mute or block spammers
+
+Clean UI for reporting
+
+5. File Structure Suggestions
+components/
+   LikeButton.tsx
+   CommentInput.tsx
+   CommentItem.tsx
+   MessageBubble.tsx
+   MessageInput.tsx
+   NotificationItem.tsx
+
+hooks/
+   useLikes.ts
+   useComments.ts
+   useMessages.ts
+   useNotifications.ts
+
+store/
+   likesStore.ts
+   commentStore.ts
+   messageStore.ts
+   notificationStore.ts
+
+screens/
+   CommentsScreen.tsx
+   ChatListScreen.tsx
+   ChatRoomScreen.tsx
+   NotificationsScreen.tsx
+
+6. Additional Considerations
+
+Use React Native Paper theming for a consistent modern aesthetic.
+
+Ensure all social components are reusable across the app.
+
+Handle keyboard interactions smoothly in chat screens.
+
+Comment key parts of the code for clarity.
+
+Keep network calls optimized and cached in Zustand.
+
+Follow TypeScript best practices and strict typing.
+
+Add fallback UIs for empty states (no chats, no likes, etc.).
+
+Add smooth scrolling and auto-scroll for chat messages.
+
+Deliverable
+
+Provide a detailed implementation outline or starter code for:
+
+Hooks for likes, comments, messages, notifications
+
+Zustand stores for real-time updates
+
+Beautiful reusable UI components
+
+Screens for chat, comments, and notifications
+
+All code must follow clean architecture, be modular, and maintain readability.
+
+
+Point 7 — Payment, Wallet & Transactions System
+
+Use this prompt in Cursor to generate modular, production-level code using:
+✔ TypeScript
+✔ React Native
+✔ React Native Paper (UI)
+✔ Zustand (state management)
+✔ Supabase (backend + row-level security)
+✔ Clean architecture
+✔ File separation
+✔ Reusable components
+✔ Small focused modules
+
+Prompt for Feature 7: Payment, Wallet & Transactions
+
+I want to implement a Payment + Wallet + Transactions system inside my React Native cricket app.
+Please generate highly structured, modular, scalable code that follows clean architecture and uses:
+
+TypeScript
+
+Supabase
+
+Zustand
+
+React Native Paper
+
+Reusable UI components
+
+Custom hooks for logic
+
+Small files, clean folder structure
+
+Make sure logic and UI are separated into hooks + components.
+
+1. System Overview
+
+User should be able to:
+
+A. Add Money to Wallet
+
+Using external payment methods (Stripe / JazzCash / Easypaisa / PayPal) – mock integration for now
+
+Store transaction record in Supabase
+
+Update wallet balance
+
+Use secure RLS policies
+
+B. Withdraw Money
+
+User enters amount
+
+Validate min withdrawal
+
+Admin approval step
+
+Transaction record with status: pending, approved, rejected
+
+C. Wallet Balance
+
+Always fetch real-time balance
+
+Use Supabase subscription for wallet updates
+
+Cached in Zustand
+
+Show loading skeletons
+
+D. Tournament Payment System
+
+User can:
+
+Pay entry fee to join tournaments
+
+Organizers can collect payments
+
+Automatic transfer:
+
+Deduct from user wallet
+
+Add to organizer wallet
+
+Show transaction receipt UI
+
+E. Team Payment Splitting
+
+Team captain can pay total fees
+
+Other team members can contribute
+
+Partially paid status per player
+
+F. Full Transactions History
+
+List of all user transactions:
+
+Added money
+
+Withdrawals
+
+Tournament fees
+
+Prize awards
+
+Refunds
+
+Filters:
+
+Date
+
+Status
+
+Type
+
+G. Prize Distribution System
+
+Tournament creator can:
+
+Distribute prize money to winners
+
+Money goes to winners’ wallets
+
+Store transaction entry (type: "prize")
+
+H. In-App Marketplace (Optional)
+
+Users can buy badges, boost profiles, or premium features
+
+Buy using wallet balance
+
+2. Database Tables (Supabase)
+
+Generate code and schema for:
+
+wallets
+id (uuid)
+user_id (uuid)
+balance (int)  // store in PKR
+updated_at
+
+transactions
+id (uuid)
+user_id (uuid)
+type (enum: add, withdraw, fee, refund, prize, purchase)
+amount
+status (pending, success, failed)
+meta (jsonb)  // tournament_id, match_id, etc.
+created_at
+
+withdraw_requests
+id (uuid)
+user_id
+amount
+status (pending, approved, rejected)
+created_at
+approved_by (uuid)  // admin
+
+tournament_payments
+id
+user_id
+tournament_id
+amount
+status
+
+
+Include RLS policies for all tables.
+
+3. File Structure
+store/
+   walletStore.ts
+   transactionStore.ts
+
+hooks/
+   useWallet.ts
+   useTransactions.ts
+   usePayment.ts
+   useWithdraw.ts
+
+components/
+   WalletCard.tsx
+   AddMoneyButton.tsx
+   TransactionItem.tsx
+   WithdrawForm.tsx
+   PaymentSuccessModal.tsx
+   PaymentFailedModal.tsx
+
+screens/
+   WalletScreen.tsx
+   AddMoneyScreen.tsx
+   WithdrawScreen.tsx
+   TransactionsScreen.tsx
+   TournamentPaymentScreen.tsx
+
+4. Custom Hooks (Logic — MUST include)
+useWallet.ts
+
+getWalletBalance()
+
+subscribeWalletRealtime()
+
+addBalance(amount)
+
+deductBalance(amount)
+
+Error handling + toast
+
+useTransactions.ts
+
+getUserTransactions()
+
+filterTransactions()
+
+createTransaction()
+
+useWithdraw.ts
+
+requestWithdraw(amount)
+
+Admin approval handling
+
+Status updates
+
+usePayment.ts
+
+For tournament payments:
+
+payTournamentFee(tournamentId, amount)
+
+transferFunds(senderId, receiverId, amount)
+
+generatePaymentReceipt()
+
+5. Zustand Stores (Global State)
+walletStore.ts
+
+balance
+
+loading
+
+setBalance()
+
+transactionStore.ts
+
+List of transactions
+
+Filters
+
+Pagination support
+
+Ensure stores are clean, minimal, and reactive only when necessary.
+
+6. UI Components (React Native Paper)
+WalletCard
+
+Shows current balance
+
+Animated balance count
+
+Refresh button
+
+AddMoneyButton
+
+Opens add money screen
+
+Paper Button + IconButton
+
+TransactionItem
+
+Icons: add, withdraw, prize, fee
+
+Status badge (success/error/pending)
+
+Clean transaction detail layout
+
+WithdrawForm
+
+Amount input
+
+Validation messages
+
+Submit button
+
+PaymentSuccessModal
+PaymentFailedModal
+
+Modern bottom sheet modal UI
+
+Clean messages
+
+Retry/close controls
+
+7. UX Requirements
+
+Beautiful, modern UI
+
+Smooth animations
+
+Skeleton loaders
+
+Clear error/success snackbars
+
+Handle slow network gracefully
+
+Disable buttons during payment
+
+Pagination for transaction list
+
+Real-time wallet update when payment succeeds
+
+8. Deliverables
+
+Provide:
+
+Database schema + RLS policies
+
+All hooks (empty or partially implemented but clean)
+
+Zustand stores
+
+UI components template
+
+Screen template pages
+
+Best-practice folder structure
+
+Explanation of data flow
+
+Keep code minimal but clean and production-ready.
+
+Point 8 — Tournament Management System
+
+Use this prompt in Cursor to generate fully structured code using:
+✔ React Native
+✔ TypeScript
+✔ Supabase
+✔ React Native Paper
+✔ Zustand
+✔ Clean file separation
+
+This feature covers everything required to create, manage, run, schedule, and complete cricket tournaments.
+
+Prompt for Feature 8: Tournament Management System
+
+I want to implement a complete Tournament Management System inside my React Native cricket app.
+Generate all required code in a clean, modular, scalable structure using the rules:
+
+Do not write messy code
+
+Keep logic and UI separate
+
+Store all app-wide state in Zustand
+
+Use separate hooks for logic
+
+Avoid long, bloated files
+
+Keep components reusable
+
+Use clean folder structure
+
+Use attractive UI with React Native Paper
+
+Use TypeScript everywhere
+
+Use Supabase with proper schema + RLS
+
+1. Feature Summary
+
+A tournament creator should be able to:
+
+A. Create Tournament
+
+Tournament name
+
+Description
+
+Entry fee
+
+Prize money distribution
+
+Tournament type (Knockout / League / Group Stage)
+
+Overs format (T10, T20, ODI)
+
+Required minimum 8 teams
+
+Upload tournament logo
+
+B. Team Invitation System
+
+Creator sends requests to selected teams
+
+At least 8 teams must accept
+
+Only after 8 accepted → tournament becomes official
+
+Track statuses:
+
+requested
+
+accepted
+
+declined
+
+C. Schedule Management
+
+Creator can add:
+
+Match schedule (date + time)
+
+Venue selection
+
+Venue images
+
+Auto-generate matches based on teams
+
+Reschedule matches
+
+Cancel matches
+
+D. Live Tournament Status Tracking
+
+Total teams
+
+Total matches
+
+Completed matches
+
+Pending matches
+
+Live matches
+
+E. Tournament Admin Privileges
+
+Admin of the tournament can:
+
+Update match results
+
+Add full scorecard
+
+Assign man of the match
+
+Upload winning moment pictures
+
+Add highlights
+
+Post updates
+
+F. Scorecard Verification System
+
+If admin enters wrong score:
+
+Players from teams can report mismatch
+
+If two or more players confirm the same correction → score updates automatically
+
+If entire match data is wrong:
+
+Two players can report → match removed
+
+Team will be removed from tournament if repeatedly reporting wrong data
+
+G. Tournament Leaderboard
+
+Show:
+
+Team standings
+
+Points table
+
+Net run rate
+
+Wins/losses
+
+Team ranking badges
+
+H. Tournament History
+
+After completion:
+
+All match data saved
+
+Team rankings saved
+
+Player performances stored
+
+Tournament becomes visible in user profile under “Past Tournaments”
+
+2. Database Schema (Supabase)
+tournaments
+id (uuid)
+creator_id (uuid)
+name
+description
+format (T10, T20, ODI)
+type (knockout, league, group)
+entry_fee
+prize_distribution (json)
+logo_url
+status (draft, pending, official, completed)
+created_at
+
+tournament_teams
+id
+tournament_id
+team_id
+status (requested, accepted, declined)
+
+matches
+id
+tournament_id
+team_a
+team_b
+scheduled_at (timestamp)
+venue_id
+venue_images (json)
+status (upcoming, live, completed, cancelled)
+result (json)
+scorecard (json)
+
+venues
+id
+name
+location
+latitude
+longitude
+images (json)
+
+score_reports
+id
+match_id
+reported_by (user_id)
+correct_score (json)
+type (player-score, full-match)
+status (pending, verified)
+
+tournament_history
+id
+tournament_id
+summary (json)
+stored_at
+
+
+Add RLS policies for protection.
+
+3. Folder / File Structure
+store/
+   tournamentStore.ts
+   matchStore.ts
+
+hooks/
+   useTournament.ts
+   useTeamRequests.ts
+   useMatchSchedule.ts
+   useScoreVerification.ts
+
+screens/
+   CreateTournamentScreen.tsx
+   TournamentDetailsScreen.tsx
+   TournamentTeamsScreen.tsx
+   TournamentScheduleScreen.tsx
+   MatchDetailsScreen.tsx
+   ScorecardEntryScreen.tsx
+   LeaderboardScreen.tsx
+
+components/
+   TournamentCard.tsx
+   TeamRequestItem.tsx
+   ScheduleItem.tsx
+   VenueCard.tsx
+   MatchCard.tsx
+   ScoreReportItem.tsx
+   LeaderboardRow.tsx
+
+4. Zustand Stores Required
+tournamentStore
+
+tournaments list
+
+current tournament
+
+team invitation status
+
+search/query filters
+
+matchStore
+
+matches
+
+schedule
+
+active match
+
+scorecard
+
+(Zustand slices must be small & clean.)
+
+5. Required Hooks
+useTournament.ts
+
+createTournament()
+
+updateTournament()
+
+fetchTournament()
+
+uploadLogo()
+
+makeOfficial()
+
+useTeamRequests.ts
+
+sendTeamRequest()
+
+acceptRequest()
+
+declineRequest()
+
+checkEightTeamsAccepted()
+
+useMatchSchedule.ts
+
+createSchedule()
+
+updateSchedule()
+
+deleteSchedule()
+
+autoGenerateMatches()
+
+useScoreVerification.ts
+
+reportWrongScore()
+
+verifyScoreReports()
+
+autoUpdateScoreIfThresholdMet()
+
+removeCorruptedMatch()
+
+Each hook must follow:
+
+Clear error handling
+
+No UI code inside
+
+Only return data + functions
+
+6. UI Components
+TournamentCard
+
+Logo
+
+Title
+
+Team count
+
+Status badge
+
+TeamRequestItem
+
+Accept / Reject buttons
+
+Team logo + name
+
+ScheduleItem
+
+Match info
+
+Time + venue
+
+Actions (edit, cancel, details)
+
+MatchCard
+
+Live / completed / upcoming status
+
+Scores
+
+Winner badge
+
+LeaderboardRow
+
+Rank
+
+Team
+
+Points
+
+NRR
+
+Badges
+
+All components must follow:
+
+Minimal, clean layout
+
+Attractive UI using RN Paper
+
+Consistent spacing, typography, colors
+
+7. Tournament UX Requirements
+
+Show progress indicator when sending requests
+
+Disable scheduling until 8 teams accept
+
+Smooth animations
+
+Skeleton placeholders
+
+Beautiful modals for score updates
+
+Confirmation dialog before deleting schedule
+
+Offline state handling
+
+Real-time updates using Supabase subscriptions
+
+8. Deliverables
+
+The output must include:
+
+Database tables + RLS policies
+
+Zustand store templates
+
+All hook structures
+
+Component skeletons
+
+Screens scaffolding
+
+Flow explanation for:
+
+Creating tournament
+
+Inviting teams
+
+Approvals
+
+Scheduling
+
+Match completion
+
+Score verification
+
+Tournament completion
+
+Clean modular architecture
+
+Do not generate junk code.
+Do not merge UI and logic in the same file.
+Keep files short and clean.
+Use reusable composable components only.
+
+If you want, I can generate Point 9, or I can start generating actual code for any part of the Tournament System.
+
+
+Point 9 — Player & Team Analytics (Full Prompt)
+
+I want a complete, production-ready Player & Team Analytics feature for my React Native cricket app. Use TypeScript, React Native, Supabase (DB + realtime), React Native Paper (UI), Zustand (state), and Cursor for development.
+Follow these non-negotiable engineering rules everywhere:
+
+Do not make code messy.
+
+Keep UI and business logic strictly separate. UI in components/screens, logic in hooks and services.
+
+Break files small — no very long files. One responsibility per file.
+
+Use custom hooks for logic (data fetching, calculations, caching, realtime updates).
+
+Shared components that will be used across the app must live in components/.
+
+Zustand for global pieces of state (cached analytics, selected player/team, filters).
+
+Attractive UI using React Native Paper (consistent theme, spacing, typography, icons, skeletons).
+
+TypeScript types everywhere. Strong types for metrics, DTOs, and API responses.
+
+Comment key logic and include unit-testable pure functions for calculations.
+
+1) Feature Scope & Goals
+
+Calculate and display per-player metrics (batting, bowling, fielding) and per-team metrics (win rate, form, net-run-rate approximation).
+
+Provide derived ratings and performance scores used across the app (badges, icons, leaderboards).
+
+Real-time updates where applicable (when new match score is approved).
+
+Allow filtering, comparing, and exporting analytics.
+
+Clear UI to inspect match-by-match breakdown and trends.
+
+Automated badge/trophy assignment and de-rating logic when performance drops.
+
+Keep all derivation logic auditable and unit-testable.
+
+2) Metrics & Formulas (implement these in pure functions)
+
+Provide a library of pure, well-documented functions (e.g., utils/analytics.ts) with these metrics:
+
+Batting
+
+totalRuns: sum of runs across matches.
+
+inningsPlayed: count of innings batted.
+
+notOuts: count of not-out innings.
+
+battingAverage = totalRuns / (inningsPlayed - notOuts) (handle divide-by-zero → null or 0).
+
+strikeRate = (totalRuns / ballsFaced) * 100 (handle 0 balls).
+
+fifties, hundreds: counts.
+
+consistencyScore = weighted std-dev or ratio of scores > 30 (design a simple formula, e.g., (countScoresAbove30 / innings) * 100).
+
+Bowling
+
+totalWickets, ballsBowled, runsConceded.
+
+bowlingAverage = runsConceded / totalWickets.
+
+economy = (runsConceded / ballsBowled) * 6.
+
+strikeRateBowling = ballsBowled / totalWickets.
+
+Fielding
+
+catches, runOuts, stumpings, fieldingPoints = catches*2 + runOuts*3 + stumpings*2.
+
+Composite / Performance Rating (player)
+
+Design a normalized rating 0–100:
+
+batWeight, bowlWeight, fieldWeight depend on player role.
+
+roleAwareScore = batScore*batWeight + bowlScore*bowlWeight + fieldScore*fieldWeight.
+
+Normalize using min/max or z-score → map to 0–100.
+
+Provide versioned formula so future adjustments are possible.
+
+Team Metrics
+
+winRate = wins / totalMatches.
+
+recentForm = weighted wins in last N matches (e.g., last 5 with weights 5..1).
+
+teamStrengthScore = combine average player ratings, winRate, net-run-rate (NRR approximation).
+
+NRR approximation from available scorecards: (teamRunsScored/oversFaced) - (opponentRunsScored/oversBowled) averaged.
+
+Badge & Icon Rules (thresholds are configurable)
+
+Player high-average badge: battingAverage ≥ 40 and innings ≥ 10 → ProBatsmanBadge.
+
+High-economy bowler badge: economy ≤ 6 and wickets ≥ 15 → GoldBowler.
+
+Team strong badge: teamStrengthScore ≥ 75 and winRate ≥ 0.6 → TrophyIcon.
+
+De-rating rule: if performance drops by ≥ 25% over last 5 matches vs previous 10, reduce rating by a penalty factor and show AtRisk indicator.
+
+3) Data Flow & Realtime
+
+Source of truth: Supabase tables for matches, scorecards, players, teams. Analytics are derived from these tables; do not store derived ratings as primary data unless versioned snapshots are needed.
+
+On match approval, a Supabase function or a backend trigger should publish an event; the app subscribes via Supabase Realtime and triggers recalculation of affected player/team analytics in the client store.
+
+For heavy batch recalculations (e.g., rebuilding all ratings), perform server-side job (outside app) and store snapshots in analytics_snapshots if needed. The app should fetch snapshots for faster loads.
+
+4) File Structure & Key Files
+components/
+   AnalyticsOverviewCard.tsx
+   PlayerStatsCard.tsx
+   TeamAnalyticsCard.tsx
+   MetricLineChart.tsx         // chart wrapper
+   MetricCompareRow.tsx
+   BadgeIcon.tsx
+
+hooks/
+   useAnalytics.ts             // main hook: fetch + compute + subscribe
+   usePlayerAnalytics.ts       // focused on one player
+   useTeamAnalytics.ts         // focused on one team
+   useAnalyticsCache.ts        // caching strategy + invalidation
+
+store/
+   analyticsStore.ts           // Zustand: cached metrics, selected filters, lastUpdated
+
+screens/
+   PlayerAnalyticsScreen.tsx
+   TeamAnalyticsScreen.tsx
+   AnalyticsCompareScreen.tsx
+   LeaderboardScreen.tsx
+
+utils/
+   analytics.ts                // pure calculation functions (unit-testable)
+   thresholds.ts               // all threshold constants (configurable)
+   exporters.ts                // CSV/JSON export helpers
+types/
+   analytics.d.ts
+services/
+   analyticsService.ts         // Supabase queries, snapshot fetchers, batching helpers
+
+5) Hooks & Store Responsibilities
+
+useAnalytics.ts:
+
+Fetch initial snapshot (if available) or compute derived metrics from scorecards.
+
+Subscribe to Supabase realtime channel for scorecard_updates.
+
+On event: update Zustand store and selectively recompute affected players/teams (only diff).
+
+Provide methods: refreshAll(), refreshPlayer(playerId), comparePlayers(a,b).
+
+analyticsStore.ts (Zustand):
+
+Holds playerAnalyticsMap, teamAnalyticsMap, lastUpdated, filters, leaderboards.
+
+Keep stores minimal and normalized; store computed top-level metrics, not raw huge arrays.
+
+usePlayerAnalytics.ts / useTeamAnalytics.ts:
+
+Return memoized analytics for UI components, handle loading and error states.
+
+6) UI Details & Charts
+
+Use React Native Paper for cards, lists, and skeletons.
+
+For charts, recommend victory-native or react-native-svg-charts — create a thin MetricLineChart wrapper component so chart library can be swapped.
+
+Visuals to include:
+
+Trend line (last N matches) for runs/wickets/average.
+
+Radar chart for role skill breakdown (bat/bowl/field).
+
+Comparison view: two players side-by-side.
+
+Leaderboards with sortable columns (runs, avg, strike rate, rating).
+
+Keep animations subtle and performant. Use skeleton loaders and lazy-load heavy charts.
+
+7) UX Rules & Interactions
+
+Allow selecting time-window: All time, Last 12 months, Last 50 matches, Custom range.
+
+Provide filtering by format (T10/T20/ODI/Custom).
+
+Show tooltips / small info icons explaining each metric and formula.
+
+Allow exporting player stats (CSV/JSON).
+
+Allow sharing snapshot images (generate a simple summary card UI that can be saved/shared).
+
+Accessibility: all charts should have alt text/summary for screen readers (textual summary of last N matches).
+
+8) Performance & Caching
+
+Cache computed analytics in Zustand with TTL (e.g., 10–30 minutes) and invalidate on realtime events.
+
+For initial load, fetch server-side snapshots if available to avoid heavy client computation.
+
+Avoid recomputing whole dataset on single match update — compute diffs: only update players/teams involved in that match.
+
+9) Security & Privacy
+
+Respect PII: only show fields the user has permission to see.
+
+Use Supabase RLS to ensure only authorized users can fetch protected data (e.g., admin-only stats).
+
+Prevent users from manipulating analytics client-side: final authoritative analytics should be generated server-side for any official leaderboards / awards; client shows computed analytics for UX and exploration.
+
+10) Testing, Monitoring & Versioning
+
+Keep pure functions in utils/analytics.ts and unit-test them extensively (edge cases: division by zero, insufficient data).
+
+Add integration tests for hooks (mock Supabase events).
+
+Version analytic formulas (e.g., v1, v2) and persist formula version in any snapshot so historical comparisons are reproducible.
+
+11) Deliverables (what I want you to produce)
+
+Types for analytics DTOs.
+
+Zustand store template (analyticsStore.ts).
+
+Hook scaffolds with comments and function signatures (useAnalytics.ts, usePlayerAnalytics.ts).
+
+Pure calculation utilities with formulas and unit-testable exports (utils/analytics.ts).
+
+Component skeletons for overview cards, player cards, trend charts, leaderboards.
+
+Service layer for Supabase queries and realtime subscription examples (services/analyticsService.ts).
+
+A short README describing: how ratings are calculated, thresholds used for badges, realtime flow, and caching strategy.
+
+If you want, I can now generate starter code for the utils/analytics.ts pure functions and the analyticsStore.ts Zustand template (TypeScript), then follow with hooks and UI components — tell me to start with utils and I’ll produce the code now.
+
+Point 10 — Team Management System (Full Prompt)
+
+This prompt is for Cursor.
+Use React Native + TypeScript + Supabase + Zustand + React Native Paper, clean architecture, strict separation of UI & logic, small files, reusable components, and attractive UI.
+
+Prompt for Feature 10: Team Management System
+
+I want to implement a complete Team Management System inside my cricket app.
+Follow these absolute engineering rules:
+
+Do NOT make code messy.
+
+UI and logic must be completely separate.
+
+Hooks for logic, components for UI.
+
+Small clean files, no bloated screens.
+
+Zustand for global state.
+
+Attractive UI with React Native Paper.
+
+All APIs typed in TypeScript.
+
+Use Supabase for DB, security, RLS, row-level permissions.
+
+Team membership must follow the REAL-PLAYER rule:
+
+Players exist as user profiles.
+
+User can only add players if those players accept the invitation.
+
+Cannot create a team if required players don’t accept.
+
+1. Feature Overview
+
+A user can:
+
+A. Create a Team
+
+Team name
+
+Team logo upload
+
+Select desired players (real users of the app)
+
+Send invitations to players
+
+Team becomes official only when minimum players accept (e.g., 11)
+
+Assign captain and vice-captain
+
+B. Manage Team Roster
+
+Add new players (with invite → accept flow)
+
+Remove players (with reason)
+
+Transfer players to/from other teams (optional approval required)
+
+Role assignment:
+
+Batsman
+
+Bowler
+
+All-Rounder
+
+Wicket-Keeper
+
+C. Player Invitation & Approval Flow
+
+Send invite to player
+
+Player sees notification → accept or decline
+
+Track statuses:
+
+requested
+
+accepted
+
+declined
+
+Team creation is blocked until minimum players accepted
+
+Auto-update team state in real-time
+
+D. Team Profile
+
+Show:
+
+Team logo
+
+Team description
+
+Captain & vice captain
+
+Total matches played
+
+Wins, losses, win rate
+
+Batch-wise team strength score (from analytics)
+
+Badges:
+
+Strong Team Badge if team rating ≥ threshold
+
+High Win Rate Badge
+
+Classic Team Badge if older than 12 months with 30+ matches
+
+E. Team Performance Tracking
+
+Match-by-match history
+
+Scorecards connected
+
+Best players of season
+
+Individual contributions per match
+
+Trends (charts)
+
+F. Team Strong/Weak Logic
+
+If repeated match data is reported as wrong → team can be flagged
+
+If multiple negative reports → team removed from tournament (but history remains)
+
+Strong team badge if:
+
+Wins ≥ 60%
+
+Strength score ≥ 75
+
+G. Team Social Features
+
+Team followers
+
+Team posts
+
+Winning photos
+
+Likes & comments
+
+Team wall (recent activities)
+
+Optional but include in prompt.
+
+2. Database Schema (Supabase)
+teams
+id (uuid)
+owner_id (uuid)
+name
+logo_url
+description
+status (draft, official, banned)
+created_at
+
+team_players
+id
+team_id
+player_id (user_id)
+role (batsman, bowler, allrounder, keeper)
+status (requested, accepted, declined, removed)
+is_captain (bool)
+is_vice_captain (bool)
+joined_at
+
+team_reports
+id
+team_id
+reported_by
+reason
+created_at
+
+team_stats
+team_id
+matches_played
+wins
+losses
+ties
+win_rate
+strength_score
+updated_at
+
+team_posts
+id
+team_id
+text
+images (json)
+created_at
+
+team_post_likes / team_post_comments
+
+Schemas included as necessary.
+
+Add RLS policies to restrict editing to team admin or the player themselves.
+
+3. Folder Structure
+store/
+   teamStore.ts
+   teamPlayerStore.ts
+
+hooks/
+   useTeam.ts
+   useTeamPlayers.ts
+   useTeamInvites.ts
+   useTeamRoles.ts
+   useTeamSocial.ts
+   useTeamStats.ts
+
+screens/
+   CreateTeamScreen.tsx
+   TeamProfileScreen.tsx
+   TeamPlayersScreen.tsx
+   TeamInvitesScreen.tsx
+   EditTeamScreen.tsx
+   TeamStatsScreen.tsx
+   TeamPostsScreen.tsx
+
+components/
+   TeamCard.tsx
+   TeamPlayerItem.tsx
+   InvitePlayerItem.tsx
+   PlayerRoleSelector.tsx
+   TeamStatRow.tsx
+   TeamPostCard.tsx
+   TeamBadge.tsx
+
+4. Zustand Stores
+teamStore.ts
+
+teams list
+
+selectedTeam
+
+filters
+
+load status
+
+teamPlayerStore.ts
+
+player list (accepted/requested/declined)
+
+cached role assignments
+
+invite statuses
+
+Stores must remain minimal, normalized, and reactive.
+
+5. Hooks Needed
+useTeam.ts
+
+createTeam()
+
+fetchTeam()
+
+updateTeam()
+
+uploadLogo()
+
+setCaptain()
+
+setViceCaptain()
+
+useTeamPlayers.ts
+
+fetchTeamPlayers()
+
+addPlayer()
+
+removePlayer()
+
+changeRole()
+
+useTeamInvites.ts
+
+sendInvite()
+
+acceptInvite()
+
+declineInvite()
+
+minimumPlayersAccepted()
+
+useTeamStats.ts
+
+computeTeamStats()
+
+updateTeamStrength()
+
+winRate()
+
+fetchStatsRealtime()
+
+useTeamSocial.ts
+
+createPost()
+
+likePost()
+
+commentPost()
+
+fetchPosts()
+
+All hooks must have:
+
+async functions
+
+error handling
+
+no UI inside
+
+typed responses
+
+6. UI Components (React Native Paper)
+TeamCard
+
+Logo, name
+
+Status badge
+
+Player count
+
+TeamPlayerItem
+
+Avatar
+
+Role icon
+
+Captain/vice indicator
+
+InvitePlayerItem
+
+Accept / Decline buttons
+
+TeamStatRow
+
+Matches, wins, win rate, strength score
+
+TeamBadge
+
+Dynamic badge icons based on performance thresholds
+
+TeamPostCard
+
+Post text
+
+Images
+
+Likes / comments
+
+Make UI attractive with Paper styling, spacing, typography, smooth animations.
+
+7. UX Requirements
+
+Real-time roster updates
+
+Prevent team creation until minimum players accept
+
+Show loading states & skeletons
+
+Confirmation dialogs for removing players
+
+Smooth role selection UI
+
+Notifications for invites
+
+Beautiful modal when team becomes official
+
+Display badge animations when team earns a badge
+
+8. Team Verification Logic
+
+Important rules:
+
+A player must accept invitation to join.
+
+If players decline, team creation is blocked until requirements are met.
+
+If a team repeatedly submits wrong match data:
+
+Record report in team_reports
+
+After N reports → show warning badge
+
+After threshold → auto-ban from tournament
+
+9. Deliverables
+
+Provide:
+
+Database schema + RLS
+
+Zustand store templates
+
+Hook scaffolds
+
+Component skeletons
+
+Screens scaffolding
+
+Role assignment logic
+
+Invite + acceptance flow
+
+Captain/vice change flow
+
+Team stats + badges logic
+
+Team social feed structure
+
+Full clean architecture setup
+
+Do not write messy code.
+Keep logic separated.
+Break everything into small, reusable files.
+Use hooks for logic, components for UI.
+Attractive Paper UI with consistent design.
+
+Point 11 — Admin Panel / Organizer Dashboard (Full Prompt)
+I want a complete, production-ready Admin Panel / Organizer Dashboard for my React Native cricket app. Use TypeScript, React Native, Supabase (DB + RLS + realtime), React Native Paper (UI), Zustand (state), and Cursor for development. Follow these non-negotiable engineering rules everywhere:
+
+
+Do not make code messy.
+
+
+Keep UI and business logic strictly separate. UI in components/screens, logic in hooks/services.
+
+
+Small files — one responsibility per file.
+
+
+Use custom hooks for all admin logic (data fetching, actions, approvals, audits).
+
+
+Zustand for global admin state (selected scope, filters, queued tasks).
+
+
+Attractive UI using React Native Paper (consistent theme, spacing, typography, icons, skeletons).
+
+
+TypeScript types everywhere. Strong types for DTOs and API responses.
+
+
+Role-based access control (RBAC): admin screens and actions must respect user roles and permissions enforced both client-side and via Supabase RLS/policies.
+
+
+Detailed logging & audit trail for all admin actions.
+
+
+
+1) Feature Scope — What the Admin Panel must do
+The Admin Panel / Organizer Dashboard must allow authorized users (organizers, admins, super-admins) to:
+A. User & Player Management
+
+
+View paginated list of users and player profiles.
+
+
+Search, filter, and sort users (by name, email, last active, role).
+
+
+View user details, match history, wallet balance, verification status.
+
+
+Manually verify/unverify players (with reason).
+
+
+Suspend / unsuspend accounts (temporary ban) and permanently ban.
+
+
+Reset passwords or trigger password resets (via Supabase).
+
+
+Impose and revoke restrictions (e.g., block from creating tournaments, posting).
+
+
+B. Tournament & Match Oversight
+
+
+View all tournaments (draft / pending / official / ongoing / completed).
+
+
+Approve or reject tournament creation (if desired by business rules).
+
+
+Force-make a tournament official if business allows.
+
+
+View match schedules and live matches; reassign match admins if needed.
+
+
+Edit or override match results (with audit notes).
+
+
+Reopen a match for re-reporting after validated disputes.
+
+
+Remove teams from tournaments (with reason) and record action in audit logs.
+
+
+C. Score & Dispute Resolution
+
+
+View pending score disputes and reports.
+
+
+Inspect evidence (reported corrections, screenshots, uploaded images, reporter comments).
+
+
+Approve or reject disputed corrections.
+
+
+If approved, patch scorecard and trigger recalculation of player/team stats (and notify users).
+
+
+If rejected, leave original data and notify reporters.
+
+
+Auto-trigger team removal flow if threshold of wrongful reporting is met (but give admin override).
+
+
+D. Financial Controls
+
+
+View wallet & transactions across users and tournaments.
+
+
+Approve or reject withdrawal requests.
+
+
+Manually create/refund transactions (e.g., payout prize money).
+
+
+Reconcile tournament payments, fees, and platform commission.
+
+
+Export financial reports (CSV / JSON) filtered by date/tournament/user.
+
+
+View payout history and dispute fund transfers.
+
+
+E. Content Moderation
+
+
+Review and moderate reported posts, comments, images, and messages.
+
+
+Remove offensive content, warn users, or apply penalties.
+
+
+Bulk-moderation tools (select multiple items → apply action).
+
+
+Manage offensive word lists and automated filters.
+
+
+F. Team & Account Verification / Trust Signals
+
+
+Verify official teams and organizations (upload verification docs).
+
+
+Grant and revoke special badges (verified, pro-team, organizer).
+
+
+Approve team logos and profile pictures if manual review required.
+
+
+G. Analytics & Monitoring
+
+
+Overview dashboards: active users, tournaments created, matches today, revenue, disputes pending, recent bans.
+
+
+Drill-down: per-tournament metrics, recent activity feed, trend graphs.
+
+
+Exportable reports and CSV snapshots.
+
+
+Real-time events stream (Supabase Realtime or webhook-fed) for live monitoring.
+
+
+H. Role & Permission Management
+
+
+CRUD for roles (admin, organizer, moderator, support) and assign granular permissions (e.g., can_edit_scores, can_approve_withdrawals).
+
+
+Audit who changed what role (timestamp + actor).
+
+
+I. Audit Logs & Activity History
+
+
+Immutable audit trail for admin actions: who, when, what, reason.
+
+
+Filterable and searchable logs (by user, tournament, action type, date).
+
+
+Ability to export logs for compliance.
+
+
+J. System Settings & Maintenance Tools
+
+
+Toggle global app flags (maintenance mode, open registration).
+
+
+Run manual data syncs or trigger snapshot rebuilds (analytics).
+
+
+Manage email templates and notification presets.
+
+
+Access health checks and queued background jobs view.
+
+
+
+2) Security & RBAC Requirements
+
+
+Implement client-side permission gating (show/hide actions depending on the current admin's role).
+
+
+Enforce server-side RLS policies in Supabase for every admin action (only allowed roles can perform actions).
+
+
+All destructive actions must prompt for confirmation and require an audit reason.
+
+
+Use two-step confirmation for highly sensitive actions (e.g., permanent bans, large refunds).
+
+
+Rate-limit critical actions to prevent abuse.
+
+
+Encrypt sensitive logs at rest (where applicable) and store minimal PII in logs.
+
+
+
+3) UX & UI Requirements (React Native Paper)
+
+
+Dashboard with cards showing KPIs (users, tournaments, revenue, disputes).
+
+
+Searchable, paginated lists with filters (server-side where necessary).
+
+
+Detail screens for Users, Tournaments, Matches, and Transactions.
+
+
+Modals & dialogs for approvals, rejection reasons, and confirmations.
+
+
+Bulk action UI pattern (checkbox + action bar).
+
+
+Use skeleton loaders for lists and heavy pages.
+
+
+Inline quick-actions (e.g., suspend user from list row) but require confirmation.
+
+
+Audit trail UI for each item showing chronological actions.
+
+
+Dark/light theming support via Paper theming.
+
+
+Accessible controls and keyboard-friendly inputs for desktop/tablet (if cross-platform).
+
+
+
+4) File Structure & Components
+store/
+   adminStore.ts            // selected scope, filters, queued tasks
+
+hooks/
+   useAdminUsers.ts         // user listing, search, suspend, verify
+   useAdminTournaments.ts   // tournament approvals, edits, overrides
+   useAdminMatches.ts       // match edits, reassign admin, reopen
+   useAdminDisputes.ts      // dispute workflows
+   useAdminFinance.ts       // withdrawals, refunds, exports
+   useAdminModeration.ts    // content moderation
+   useAdminRoles.ts         // role CRUD
+   useAdminAudit.ts         // fetch + stream audit logs
+   useAdminAnalytics.ts     // dashboard data fetch + realtime
+
+screens/
+   AdminDashboardScreen.tsx
+   AdminUsersScreen.tsx
+   AdminUserDetailScreen.tsx
+   AdminTournamentsScreen.tsx
+   AdminTournamentDetailScreen.tsx
+   AdminMatchesScreen.tsx
+   AdminMatchDetailScreen.tsx
+   AdminDisputesScreen.tsx
+   AdminFinanceScreen.tsx
+   AdminModerationScreen.tsx
+   AdminRolesScreen.tsx
+   AdminSettingsScreen.tsx
+   AdminAuditLogsScreen.tsx
+
+components/
+   KPIGrid.tsx
+   AdminListRow.tsx
+   ActionConfirmModal.tsx
+   BulkActionBar.tsx
+   AuditTimeline.tsx
+   DisputeCard.tsx
+   TransactionRow.tsx
+   FileUploadVerifier.tsx
+   ExportButton.tsx
+
+
+5) Database / Schema Considerations (Supabase)
+Extend existing schemas and add necessary admin tables:
+admin_actions
+id (uuid)
+actor_id (uuid)        // admin performing the action
+action_type (text)     // e.g., "ban_user", "approve_withdrawal"
+target_type (text)     // e.g., "user", "tournament", "match"
+target_id (uuid)
+reason (text)
+meta (jsonb)
+created_at (timestamp)
+
+withdraw_requests (already exists) — add approved_by, approved_at, admin_notes.
+disputes
+id
+match_id
+reported_by
+status (pending, resolved, rejected)
+evidence (jsonb)
+resolution_notes
+resolved_by (admin_id)
+resolved_at
+
+audit_snapshots (for exported snapshots)
+id
+snapshot_type
+data (jsonb)
+created_by
+created_at
+
+
+
+Add RLS policies to ensure only authorized admin roles can read/write these tables.
+
+
+Ensure immutability for admin_actions (no edits, only append).
+
+
+
+6) Hooks Behaviors & Responsibilities
+useAdminUsers.ts
+
+
+listUsers({ page, query, filters }) (server-side pagination + filters)
+
+
+getUserDetails(userId)
+
+
+suspendUser(userId, reason) (creates admin_action + updates user status)
+
+
+verifyUser(userId, docs?)
+
+
+exportUsersCSV(filters)
+
+
+useAdminTournaments.ts
+
+
+listTournaments(filters)
+
+
+approveTournament(tournamentId, adminNotes)
+
+
+forceMakeOfficial(tournamentId)
+
+
+removeTeamFromTournament(tournamentId, teamId, reason)
+
+
+useAdminMatches.ts
+
+
+patchMatchResult(matchId, correctedScore, reason)
+
+
+reopenMatch(matchId, reason)
+
+
+assignMatchAdmin(matchId, adminId)
+
+
+useAdminDisputes.ts
+
+
+listDisputes(filters)
+
+
+resolveDispute(disputeId, resolution, adminNotes)
+
+
+rejectDispute(disputeId, adminNotes)
+
+
+useAdminFinance.ts
+
+
+listWithdrawals(filters)
+
+
+approveWithdrawal(requestId, adminNotes)
+
+
+rejectWithdrawal(requestId, adminNotes)
+
+
+manualRefund(transactionId, amount, reason)
+
+
+exportTransactionsCSV(filters)
+
+
+useAdminModeration.ts
+
+
+listReportedContent()
+
+
+takeAction(contentId, actionType, reason) (remove/warn/ban)
+
+
+bulkModerate(contentIds, action)
+
+
+useAdminAudit.ts
+
+
+streamAuditLogs(filters) — realtime subscription
+
+
+exportAuditLogsCSV(filters)
+
+
+All hooks must:
+
+
+Return typed responses and error states.
+
+
+Not contain UI code.
+
+
+Create admin_actions records for every admin change.
+
+
+Require reason parameter for destructive / irreversible actions.
+
+
+
+7) State Management (Zustand)
+adminStore.ts should include:
+
+
+selectedScope (users / tournaments / disputes / finance)
+
+
+filters for current list
+
+
+bulkSelection (ids) for bulk actions
+
+
+loadingState & errorState
+
+
+Actions to manipulate selection and filters
+
+
+Keep store small and ephemeral; do not store large datasets—fetch server-side as needed.
+
+8) UI Workflows & Edge Cases
+
+
+Approve Withdrawal Flow: Approve button opens ActionConfirmModal asking for admin notes; on confirm, call supabase and write admin_actions. Show success + refresh list.
+
+
+Patch Match Result: Show original vs proposed score diff UI, allow admin to enter resolution notes, and show affected players/teams. If applied, trigger analytics recompute.
+
+
+Bulk Moderation: Allow selecting many items, preview action count, confirm with typed acknowledgement for destructive operations.
+
+
+Dispute Triage: Allow assigning a dispute to another admin and track ownership.
+
+
+Exporting & Reporting: Exports should be backgrounded if large (return a job id) and admin notified on completion; show progress UI.
+
+
+Offline Resilience: Queue admin actions locally when offline, prompt for re-sync, but require re-authentication for critical actions.
+
+
+
+9) Logging, Monitoring & Rate Limits
+
+
+Log all admin API calls with admin_actions.
+
+
+Rate-limit heavy endpoints (e.g., exportTransactionsCSV) and provide job queueing.
+
+
+Show admin-friendly error messages and retry options.
+
+
+Provide an operations view for queued jobs and their status.
+
+
+
+10) Testing & QA
+
+
+Unit tests for all pure logic in hooks/services.
+
+
+Integration tests for key flows (approve withdrawal, resolve dispute, ban user).
+
+
+End-to-end smoke tests for admin dashboard pages.
+
+
+Mocks for Supabase in tests.
+
+
+Test RBAC thoroughly (role cannot do action).
+
+
+
+11) Deliverables
+Produce:
+
+
+Zustand adminStore template (TypeScript).
+
+
+Hook scaffolds (useAdminUsers, useAdminTournaments, useAdminDisputes, useAdminFinance, useAdminModeration, useAdminAudit, etc.) with function signatures, typed returns, and comments.
+
+
+Component skeletons for dashboard, lists, modals, audit timeline, KPI cards.
+
+
+Supabase schema snippets and admin_actions table with RLS policy suggestions (not full SQL but clear schema + policy guidance).
+
+
+Example audit flow: demonstrate how an admin action is recorded (code snippet showing creation of admin_actions and subsequent DB update).
+
+
+A short README describing RBAC, audit practices, rate limiting, and sensitive-action UX requirements.
+
+
+
+If you want, I can now generate starter code for any of these pieces (start with adminStore.ts, a useAdminUsers.ts hook, or the admin_actions schema + example insert). Tell me which to generate first and I’ll produce the TypeScript code following all the rules.
+
+
+
+Point 12 — Extra Features & Advanced Upgrades (Full Prompt)
+I want a complete, production-ready Extra Features / Advanced Upgrades prompt for my React Native cricket app. Use TypeScript, React Native, Supabase (DB + Storage + Realtime + RLS), React Native Paper (UI), Zustand (state), and Cursor for development.
+Follow the same non-negotiable engineering rules used across all other points:
+
+
+Do not make code messy.
+
+
+Keep UI and business logic strictly separate. UI in components/screens; logic in hooks/services.
+
+
+Break files small — one responsibility per file.
+
+
+Use custom hooks for all logic.
+
+
+Zustand for global state slices (caching, realtime flags, user preferences).
+
+
+Attractive UI using React Native Paper; consistent theme, spacing, typography, skeletons.
+
+
+TypeScript types everywhere. Strong types for DTOs, API responses, and media metadata.
+
+
+Clear comments on complex logic and business rules.
+
+
+No monolithic files — keep components, hooks, and stores focused and reusable.
+
+
+Below are all the advanced features you might add later — each with full functional requirements, schema suggestions, file structure, hooks, components, UX rules, performance considerations, security, and deliverables. Do not miss anything.
+
+1) Feature Summary — what “Extra Features” includes
+
+
+Live push & in-app notifications (real-time & push via FCM/APNs).
+
+
+Highlight reels / media uploads (images, short videos, auto-generated clips).
+
+
+AI-based coaching & performance tips (client-side suggestions + optional server models).
+
+
+Downloadable scorecards, posters & shareable summary cards (PDF / image / CSV).
+
+
+Reputation & leveling system (player reputation, levels, earned badges).
+
+
+Ground/venue booking & availability calendar.
+
+
+Advanced search, filters, and discovery (geo + skill + date).
+
+
+Localization & multi-language support.
+
+
+Accessibility improvements (screen reader, contrast, big text).
+
+
+Integrations (calendar sync, social share, external payment gateways).
+
+
+Monetization features (subscriptions, promotions, boosts).
+
+
+Offline-first support and sync for critical flows (match scoring, message drafts).
+
+
+Monitoring, observability, and analytics for these features.
+
+
+
+2) Global Architecture & Principles (applies to every extra feature)
+
+
+Separation of concerns: UI ↔ Hooks/services ↔ Supabase.
+
+
+File-size discipline: Keep files focused; export small utilities.
+
+
+Zustand usage: Keep ephemeral client state (UI flags, cached media lists, realtime connection state). Persist user preferences (language, notifications) in Supabase user metadata.
+
+
+Hooks: Each feature gets its own hooks/ file(s). Hooks must be pure where possible, return typed results and loading/error states.
+
+
+Components: Reusable and theme-aware. Keep presentational components in components/ and container screens in screens/.
+
+
+Storage: Use Supabase Storage for media (images/videos) with signed URLs. For larger video hosting, plan CDN or 3rd-party service.
+
+
+RLS: Add Supabase RLS policies for all created tables. E.g., only owners or verified admins can delete media, only invited users can book venue slots, etc.
+
+
+Security: Validate all uploads server-side if possible, sanitize metadata, scan for abusive content.
+
+
+Testing: Unit tests for pure logic; integration tests for hooks; mocks for Supabase and media.
+
+
+Accessibility & localization: Essential from day one. Keep text strings in resource files.
+
+
+
+3) Feature Details, Schemas, Hooks, Components & UX
+A — Live Push & In-App Notifications
+Functional Requirements
+
+
+In-app realtime notifications via Supabase Realtime channels.
+
+
+Push notifications using FCM (Android) and APNs (iOS) — store device tokens per user.
+
+
+Notification types: match start, score update, team invites, challenge requests, payment updates, admin messages.
+
+
+Notification preferences per user (enable/disable types).
+
+
+Badge counts and unread/read tracking.
+
+
+Deep-links: tapping notification opens appropriate screen (match, tournament, chat).
+
+
+Suggested Tables
+
+
+device_tokens (id, user_id, token, platform, created_at)
+
+
+notifications (id, user_id, type, payload jsonb, read boolean, created_at)
+
+
+Hooks & Services
+
+
+hooks/useNotifications.ts — subscribe to realtime, fetch notifications, mark read, manage preferences.
+
+
+services/pushService.ts — wrapper for sending push (server-side job). Client stores token via useNotifications.
+
+
+Components & Screens
+
+
+components/NotificationItem.tsx, NotificationBadge.tsx
+
+
+screens/NotificationsScreen.tsx
+
+
+Deep-link handling in app entry point.
+
+
+UX
+
+
+Smooth badge animations; quick-swipe to mark read; allow bulk-mark-read.
+
+
+Confirmation for disabling critical notification types (e.g., tournament canceled).
+
+
+
+B — Highlight Reels / Media Uploads
+Functional Requirements
+
+
+Upload images & short videos (max duration configurable).
+
+
+Photo galleries for matches and tournaments.
+
+
+Auto-generate short highlight reels (server-side or client-side stitched clips) or let users upload clips.
+
+
+Thumbnail generation; video transcoding for mobile delivery (server/CDN).
+
+
+Like/comment on media.
+
+
+Moderation & reporting for media.
+
+
+Suggested Tables
+
+
+media (id, owner_id, type (image/video), url, thumb_url, meta jsonb, created_at)
+
+
+match_media (match_id, media_id, caption, uploader_id)
+
+
+Hooks & Services
+
+
+hooks/useMedia.ts — upload, list, delete (owner/admin), generate thumbnails (trigger server lambda).
+
+
+services/mediaService.ts — manage signed URLs and CDN integration.
+
+
+Components & Screens
+
+
+components/MediaGrid.tsx, MediaViewer.tsx, MediaUploadButton.tsx
+
+
+screens/MatchMediaScreen.tsx, TournamentMediaScreen.tsx
+
+
+UX
+
+
+Upload progress UI, resumable uploads for large videos, preview and basic trimming on client.
+
+
+Auto-moderation flags; manual moderation queue.
+
+
+
+C — AI-based Coaching & Performance Tips
+Functional Requirements
+
+
+Provide personalized tips after each match or periodically.
+
+
+Suggestions: batting drills, bowling adjustments, fielding tips based on player weaknesses.
+
+
+Explainability: show why the tip was suggested (e.g., “Your strike rate last 5 games is X — try Y drill”).
+
+
+Simple on-device models for lightweight suggestions (optional) and server-side models for better advice.
+
+
+Allow opt-in for AI features and privacy notice.
+
+
+Data Inputs
+
+
+Player analytics (from point 9): averages, strike rate, economy, recent form, situational stats.
+
+
+Hooks & Services
+
+
+hooks/useCoaching.ts — fetch analytics, run rules/heuristics, return recommended tips.
+
+
+services/aiService.ts — (server) call to model or heuristic engine.
+
+
+Components & Screens
+
+
+components/TipCard.tsx, components/TrainingPlan.tsx
+
+
+screens/CoachingScreen.tsx
+
+
+UX
+
+
+Short, actionable tips with “why” and “how-to” steps. Option to add drills to user calendar or save tips.
+
+
+
+D — Downloadable Scorecards, Posters & Shareable Summary Cards
+Functional Requirements
+
+
+Export match scorecards as CSV and printable PDF.
+
+
+Generate shareable poster image (match summary + MVP + trophy) that user can share on social.
+
+
+Allow tournaments to have downloadable brackets and standings PDFs.
+
+
+Hooks & Services
+
+
+hooks/useExport.ts — generate CSV/PDF requests (server-side for heavy work).
+
+
+services/exportService.ts — server-side job that returns download link when ready.
+
+
+Components & Screens
+
+
+components/ExportButton.tsx, components/PosterPreview.tsx
+
+
+screens/ExportScreen.tsx
+
+
+UX
+
+
+Long exports run as background job; notify user when ready. Provide preview thumbnails.
+
+
+
+E — Reputation & Leveling System
+Functional Requirements
+
+
+Players earn reputation points for: verified match participation, positive reports, wins, community actions (helpful comments), and milestone achievements.
+
+
+Levels (Bronze, Silver, Gold …) and badges for achievements.
+
+
+De-rating for poor conduct or repeated match disputes.
+
+
+Display reputation on player profile with badge icons and explanation of points.
+
+
+Suggested Tables
+
+
+reputation_events (id, user_id, type, points, meta, created_at)
+
+
+reputation_totals (user_id, total_points, level, updated_at)
+
+
+Hooks & Services
+
+
+hooks/useReputation.ts — fetch totals, list events, claim badges.
+
+
+services/reputationService.ts — apply points on match approval, user actions. Prefer server-side logic for authoritative scoring.
+
+
+Components & Screens
+
+
+components/ReputationBadge.tsx, components/ReputationTimeline.tsx
+
+
+screens/ReputationScreen.tsx
+
+
+UX
+
+
+Gamified elements: progress bar to next level, celebratory animation on level-up, leaderboard.
+
+
+
+F — Ground / Venue Booking & Availability Calendar
+Functional Requirements
+
+
+Ground owners can list venues with availability calendar, pricing, facilities.
+
+
+Users can search venues, request bookings, see availability in calendar view.
+
+
+Booking confirmation, payment flow, cancellation policy.
+
+
+Admin/owner approval or auto-approve rules.
+
+
+Upload venue photos, address, GPS, and map integration.
+
+
+Suggested Tables
+
+
+venues (id, owner_id, name, address, lat, lng, photos, amenities, created_at)
+
+
+venue_availability (venue_id, date, timeslot, status)
+
+
+venue_bookings (id, venue_id, requester_id, timeslot, amount, status, created_at)
+
+
+Hooks & Services
+
+
+hooks/useVenues.ts, hooks/useBooking.ts — search venues, check availability, create booking, cancel booking.
+
+
+services/bookingService.ts — handle payment flows and notifications.
+
+
+Components & Screens
+
+
+components/VenueCard.tsx, components/AvailabilityCalendar.tsx
+
+
+screens/VenueSearchScreen.tsx, screens/VenueBookingScreen.tsx, screens/MyBookingsScreen.tsx
+
+
+UX
+
+
+Calendar UI with clear available/unavailable slots, booking confirmation modal, payment split for team bookings.
+
+
+
+G — Advanced Search, Filters & Discovery
+Functional Requirements
+
+
+Discover tournaments by location, date, format, skill-level, fee.
+
+
+Player search by role, average, location.
+
+
+Team discovery by rating, activity.
+
+
+Geospatial search (near me) with radius filter.
+
+
+Hooks & Services
+
+
+hooks/useDiscovery.ts — server-driven search with pagination.
+
+
+Use Supabase Postgres full-text and PostGIS (or store lat/lng and do bounding-box searches).
+
+
+Components & Screens
+
+
+components/SearchBar.tsx, components/FilterChips.tsx, screens/DiscoveryScreen.tsx
+
+
+UX
+
+
+Fast-as-you-type suggestions, debounced queries, map view toggle.
+
+
+
+H — Localization & Accessibility
+Functional Requirements
+
+
+Support multiple languages (strings stored in JSON resource files).
+
+
+Language preference stored in user metadata.
+
+
+UI respects RTL where applicable.
+
+
+Accessibility: semantic labels, proper focus order, readable contrast, scalable fonts.
+
+
+Hooks & Services
+
+
+hooks/useI18n.ts — provides translated strings and locale switching.
+
+
+Use react-native-localize + resource loader.
+
+
+Components & Screens
+
+
+All components must accept accessibility props; provide A11y examples.
+
+
+UX
+
+
+Language toggle in settings, test flows for screen readers, ensure charts have textual alternatives.
+
+
+
+I — Integrations & Sync
+Functional Requirements
+
+
+Calendar sync (Google / Apple calendar) for scheduled matches & bookings.
+
+
+Social share integration (native share sheet) for posters and match results.
+
+
+Optional webhook integrations for 3rd party scoring or analytics.
+
+
+Hooks & Services
+
+
+hooks/useCalendarSync.ts, services/webhookService.ts
+
+
+Use deep-links and share API wrappers.
+
+
+UX
+
+
+Permission dialogues, clear one-tap share, calendar permission explanations.
+
+
+
+J — Monetization Features
+Functional Requirements
+
+
+Subscriptions (monthly/annual) for premium features (advanced analytics, boost listings).
+
+
+Boosts/promotions for teams/tournaments (pay to appear in discovery).
+
+
+Ads (optional) — keep user experience primary.
+
+
+Promo codes and discounts for tournament entries.
+
+
+Tables
+
+
+subscriptions, promotions, boosts, promo_codes
+
+
+Hooks & Services
+
+
+hooks/useSubscriptions.ts, hooks/useBoosts.ts, services/billingService.ts (integrate Stripe / local payment gateways).
+
+
+UX
+
+
+Clear subscription upsell screens, trial handling, cancellation, receipts.
+
+
+
+K — Offline-first & Sync
+Functional Requirements
+
+
+Critical flows (match scoring, match reports drafts, messages drafts) should work offline and sync when online.
+
+
+Conflict resolution: prefer server authoritative but allow merge prompts.
+
+
+Local persistence via SQLite or AsyncStorage + background sync.
+
+
+Hooks
+
+
+hooks/useOfflineSync.ts — queueing system, retry logic, sync status UI.
+
+
+UX
+
+
+Show offline indicator, queued actions panel, retry/resend button.
+
+
+
+L — Monitoring, Observability & Analytics
+Functional Requirements
+
+
+Telemetry for errors, important events (payments, disputes).
+
+
+Track performance of heavy features (video uploads, exports).
+
+
+Admin dashboard to view usage of premium features and media upload stats.
+
+
+Services
+
+
+Integrate Sentry (or alternative) for crash reporting. Use server-side job monitoring for exports and queued tasks.
+
+
+
+4) File Structure (example - one per feature grouping)
+components/
+   MediaGrid.tsx
+   TipCard.tsx
+   ExportButton.tsx
+   ReputationBadge.tsx
+   VenueCard.tsx
+   AvailabilityCalendar.tsx
+   NotificationItem.tsx
+   OfflineQueuePanel.tsx
+
+hooks/
+   useNotifications.ts
+   useMedia.ts
+   useCoaching.ts
+   useExport.ts
+   useReputation.ts
+   useVenues.ts
+   useBooking.ts
+   useDiscovery.ts
+   useI18n.ts
+   useCalendarSync.ts
+   useSubscriptions.ts
+   useOfflineSync.ts
+   useMonitoring.ts
+
+store/
+   mediaStore.ts
+   notificationStore.ts
+   reputationStore.ts
+   venueStore.ts
+   offlineStore.ts
+   settingsStore.ts  // language, notification prefs, theme
+
+screens/
+   NotificationsScreen.tsx
+   MediaUploadScreen.tsx
+   CoachingScreen.tsx
+   ExportsScreen.tsx
+   ReputationScreen.tsx
+   VenueSearchScreen.tsx
+   BookingScreen.tsx
+   DiscoveryScreen.tsx
+   SubscriptionsScreen.tsx
+
+
+5) Cross-cutting Concerns & Non-functional Requirements
+
+
+Performance: Use lazy-loading for media, paginate heavy lists, use thumbnails, debounce searches.
+
+
+Scalability: Offload heavy jobs (video transcoding, PDF generation) to server-side workers.
+
+
+Privacy & Consent: For AI tips and analytics collection, present clear consent and opt-out.
+
+
+Cost control: Limit video retention, compress media, and use tiered storage.
+
+
+Legal & Compliance: Allow users to request deletion of their data; keep minimal PII in logs.
+
+
+RLS & Permissions: Every server-side write must be authorized (only owners, admins, or business logic).
+
+
+Backups: Design DB backups and snapshotting for exports and analytics snapshots.
+
+
+
+6) Testing Strategy
+
+
+Unit tests for all pure utilities and calculations.
+
+
+Integration tests for hooks with mocked Supabase.
+
+
+E2E tests for critical flows (media upload + share, booking + payment mock).
+
+
+Accessibility audits (axe, manual screen reader checks).
+
+
+Load tests for media upload endpoints and export jobs.
+
+
+
+7) Deliverables (what I want you to produce from this prompt)
+
+
+Schema suggestions for new tables (media, venues, bookings, notifications, reputation) with RLS guidance.
+
+
+Zustand store templates for media, notifications, reputation, and offline queue.
+
+
+Hook scaffolds (typed function signatures, comments) for each advanced feature: useMedia, useNotifications, useCoaching, useExport, useVenues, useBooking, useOfflineSync, useSubscriptions.
+
+
+Component skeletons for upload UI, media viewer, tip card, venue calendar, offline queue panel.
+
+
+Screen templates demonstrating UX flows (media upload → moderation → highlight creation; booking flow; offline scoring sync).
+
+
+Integration notes for FCM/APNs, video CDN/transcoding, calendar sync, and payments.
+
+
+Testing checklist and example unit test for one pure util (e.g., reputation point calc).
+
+
+README describing privacy, consent, storage limits, and operational notes.
+
+
+
+8) Final Notes & Constraints
+
+
+Keep everything modular and easy to iterate on. If a feature is complex (e.g., video transcoding or AI models), design it so a minimal viable version can be shipped first: client-side trimming + small uploads, then upgrade to server-side processing.
+
+
+If you present example code, avoid including secrets or API keys; show placeholders and environment var usage.
+
+
+Maintain consistent TypeScript types and prefer small pure utilities for calculations so they’re easy to test.
+
+
+
+Would you like me to generate starter code for any of these advanced features now (for example: hooks/useMedia.ts + mediaStore.ts + an upload component), or produce the Supabase schema + RLS snippets for the media/venue/booking tables first?
